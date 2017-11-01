@@ -1,0 +1,13 @@
+﻿<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="mcimport" id="ai|dPcv:Y3fKH/*p)6;t" x="271" y="43">
+    <next>
+      <block type="mccreate" id="wFYL012mmDis8/0O`;ja">
+        <next>
+          <block type="mcpost" id="+),ktugFV23pU]_c`q2S">
+            <field name="chat">Hello World</field>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>

@@ -1,0 +1,50 @@
+﻿<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="time" id="D}XvD|ybPrXEmOD0]!R6" x="253" y="78">
+    <next>
+      <block type="importgpiozero" id="bc/ITifg-2Q}2n!9S;P9">
+        <next>
+          <block type="buttonset" id="=oh)hybJe3Rrp+:+:ULo">
+            <field name="button">button</field>
+            <field name="pin">27</field>
+            <next>
+              <block type="servoset" id="4VK*zFU@@.(=+cF65{:t">
+                <field name="servo">servo</field>
+                <field name="pin">22</field>
+                <next>
+                  <block type="while_true" id="jb|~d3~`,k2;DdGA#e72">
+                    <statement name="DO">
+                      <block type="buttonaction" id="w#y#-N1!X%2O6@BRO)dI">
+                        <field name="button">button</field>
+                        <field name="action">wait_for_press</field>
+                        <field name="bracket"></field>
+                        <next>
+                          <block type="servoaction" id="!nfe3P`gvW!=@lNfSMHa">
+                            <field name="servo">servo</field>
+                            <field name="action">max</field>
+                            <field name="bracket"></field>
+                            <next>
+                              <block type="sleep" id="zc][N0lTPpa4xsNmiRhs">
+                                <field name="sleepTime">1</field>
+                                <next>
+                                  <block type="servoaction" id="yXvu6N`4KVoJIAdCvQ5?">
+                                    <field name="servo">servo</field>
+                                    <field name="action">min</field>
+                                    <field name="bracket"></field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
+</xml>
